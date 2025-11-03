@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="../css/cadastro.css">
+  <link rel="stylesheet" href="../css/cabecalho.css">
+</head>
+<body>
+ 
+    <header>
+      <div class="logo">lojinha</div>
+      
+        <ul>
+          <li><a href="../php/index.php">PRINCIPAL</a></li>
+          <li><a href="cadastro.html" class="active" >CADASTRO</a></li>
+          <li><a href="login.html">LOG IN</a></li>
+          <li><a href="adm.html">ADMINISTRADOR</a></li>
+        </ul>
+    </header>
+
+  <div class="left">
+    <h2>Cadastrar</h2>
+
+    <form action="../php/cadastro.php" method="POST">
+
+      <input type="text" placeholder="Nome completo" name="nome">
+      <input type="text" placeholder="CPF" name="cpf">
+      <input type="email" placeholder="E-mail" name="email">
+      <input type="password" placeholder="Senha" name="senha">
+      <input type="password" placeholder="Confirmar senha" name="confirmar">
+      <input type="text" placeholder="Celular" name="celular">
+      <input type="text" placeholder="Endereço" name="endereco"> 
+
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <p>Já tem conta? <a href="login.html">Log in</a></p>
+  </div>
+
+  <div class="right"></div>
+</body>
+</html>

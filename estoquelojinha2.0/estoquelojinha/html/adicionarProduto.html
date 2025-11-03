@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Produto</title>
+  <link rel="stylesheet" href="../css/adicionarProduto.css">
+  <link rel="stylesheet" href="../css/cabecalho.css">
+</head>
+<body>
+  
+    <header>
+      <div class="logo">lojinha</div>
+        <ul>
+          <li><a href="../php/index.php" >PRINCIPAL</a></li>
+          <li><a href="../php/dashboard.php">DASHBOARD</a></li>
+          <li><a href="adicionarProduto.html" class="active">ADICIONAR PRODUTOS</a></li>
+          <li>ADMINISTRADOR</li>
+        </ul>
+    </header>
+
+    <div class="left">
+        <h2>Adicionar Produto</h2>
+        <form action="../php/adicionar_produto.php" method="POST">
+
+        <input type="text" placeholder="Nome do produto" name="nome_produto" required><br>
+
+        <input type="text" placeholder="Categoria" name="categoria_produto" required><br>
+
+        <input type="text" placeholder="Descrição" name="descricao_produto" required><br>
+
+        <input type="text" placeholder="Fornecedor" name="fornecedor_produto" required><br>
+
+        <input type="number" placeholder="Valor (R$)" name="valor_produto" required><br>
+
+        <input type="text" placeholder="Unidade de medida" name="unidadeDeMedida_produto" required><br>
+
+        <input type="number"placeholder="Quantidade" name="quantidade" required><br>
+
+        <input type="text" placeholder="URL da foto do produto" name="url" required><br>
+
+        <button type="submit">Adicionar produto</button>
+    </form>
+    </div>
+
+  <div class="right"></div>
+</body>
+</html>

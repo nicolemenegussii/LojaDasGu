@@ -1,0 +1,127 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+main {
+flex: 1;
+padding: 40px;
+text-align: center;
+}
+
+.produtos-container h2 {
+color: #3a006a;
+font-size: 26px;
+margin-bottom: 30px;
+}
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* --- Card do produto --- */
+.produto {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.06);
+  width: 250px;
+  padding-bottom: 20px;
+}
+
+/* --- Imagem --- */
+.divImagemCard {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+.divImagemCard img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* --- Texto --- */
+.produto h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2b004f;
+  margin: 15px 10px 5px;
+  min-height: 40px;
+}
+
+.produto p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.produto .preco {
+  color: #2b004f;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* --- Botão --- */
+.produto button {
+  margin-top: 15px;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.produto button:hover {
+  background-color: #36104e;
+}
+ .divImagemCard {
+    height: 220px;
+  }
+
+
+footer {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 100px;
+padding: 20px 0;
+background: #fff;
+box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+margin-top: auto;
+}
+
+footer p {
+color: #4b0082;
+font-size: 15px;
+font-weight: bold;
+margin: 0;
+}
+
+/* Mensagem de sucesso para o cadastro */
+.sucesso-popup {
+    color: #155724; /* Texto verde escuro */
+    background-color: #D4EDDA; /* Fundo verde claro */
+    border: 1px solid #C3E6CB; /* Borda verde */
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto; /* Centraliza e dá espaço */
+    width: 80%; /* Ocupa 80% da largura da página */
+}
