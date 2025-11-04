@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $numero_cliente   = $_POST['celular'];
     $endereco_cliente = $_POST['endereco'];
 
+    //transfromar senha em hash
     $senha_hash = password_hash($senha_cliente, PASSWORD_DEFAULT);
 
     //para evitar sql injection
