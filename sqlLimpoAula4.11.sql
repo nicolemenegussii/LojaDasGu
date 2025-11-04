@@ -12,6 +12,14 @@
     quantidade INT NOT NULL,
     url_foto_produto VARCHAR(255)
     );
+    CREATE TABLE expedicao (
+    id_expedicao BIGINT AUTO_INCREMENT PRIMARY KEY,
+    data_expedicao DATE NOT NULL,
+    responsavel_expedicao VARCHAR(40),
+    prazo_expedicao DATE NOT NULL
+    -- adicionar tabela pedidos_expedicao
+    );
+    
     create table cliente(
     id_cliente BIGINT AUTO_INCREMENT PRIMARY KEY,
     nome_cliente VARCHAR(100) NOT NULL,
@@ -35,6 +43,12 @@
     FOREIGN KEY (id_produto) REFERENCES produto(id_produto),
     FOREIGN KEY (id_pedido) REFERENCES pedido(id_pedido)
     );
+    CREATE TABLE pedidos_expedicao (
+    id_expedicao BIGINT NOT NULL,
+    id_pedido BIGINT NOT NULL,
+    FOREIGN KEY (id_expedicao) REFERENCES expedicao(id_expedicao),
+    FOREIGN KEY (id_pedido) REFERENCES pedido(id_pedido)
+    );
     CREATE TABLE administradores (
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario VARCHAR(50) NOT NULL UNIQUE,
@@ -56,10 +70,10 @@
     -- VIEW
 
     -- produtos apenas por nome e categoria
+    
     -- CREATE VIEW view_estoque_produto AS view_produto
     -- SELECT nome_produto, categoria_produto
     --  FROM produto;
-
     -- SELECT * FROM view_produto;
 
 
