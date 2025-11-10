@@ -49,7 +49,7 @@ $resView = $conexao->query($sqlView);
           <li><a href="../php/index.php">PRINCIPAL</a></li>
           <li><a href="../html/dashboard.html" class="active">DASHBOARD</a></li>
           <li><a href="../html/adicionarProduto.html">ADICIONAR PRODUTO</a></li>
-          <li><a href="../php/sair.php">SAIR</a></li>
+          <li><a href="../php/sair.php"><img src="../php/sair.png"></a></li>
           <li>ADMINISTRADOR</li>
         </ul>
     </header>

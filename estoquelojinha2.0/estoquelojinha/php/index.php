@@ -23,10 +23,11 @@ $result = $conexao->query($sql);
   <header>
     <div class="logo">lojinha</div>
     <ul>
-      <li><a href="../php/index.php" class="active">PRINCIPAL</a></li>
+     <li><a href="../php/index.php" class="active">PRINCIPAL</a></li>
       <li><a href="../php/carrinho.php">CARRINHO</a></li>
       <li><a href="../html/cadastro.html">CADASTRO</a></li>
-      <li><a href="../html/login.html">LOG IN</a></li>
+      <li><a href="../html/login.html"></li>
+    
     </ul>
   </header>
 

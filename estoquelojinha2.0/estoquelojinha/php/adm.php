@@ -25,7 +25,7 @@ if($result->num_rows === 1) {
         header("Location: ../html/adm.html?erro=1");
     }
 } else {
-    //usuário não existe
+    //admin não existe
     header("Location: ../html/adm.html?erro=1");
 }
 
