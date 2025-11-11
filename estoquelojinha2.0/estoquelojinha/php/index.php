@@ -25,7 +25,7 @@ $result = $conexao->query($sql);
     <ul>
       <li><a href="../php/index.php" class="active">PRINCIPAL</a></li>
       <li><a href="../php/carrinho.php">CARRINHO</a></li>
-      <li><a href="../html/cadastro.html">CADASTRO</a></li>
+      
       <li><a href="../html/login.html">LOG IN</a></li>
     </ul>
   </header>
