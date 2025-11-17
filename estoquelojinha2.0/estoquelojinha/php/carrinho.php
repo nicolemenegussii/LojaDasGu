@@ -16,7 +16,6 @@ session_start();
     <ul>
       <li><a href="../php/index.php">PRINCIPAL</a></li>
       <li><a href="../php/carrinho.php" class="active">CARRINHO</a></li>
-      <li><a href="../html/cadastro.html">CADASTRO</a></li>
       <li><a href="../html/login.html">LOG IN</a></li>
     </ul>
   </header>
@@ -84,7 +83,8 @@ session_start();
         <strong>R$ <?= number_format($totalGeral, 2, ',', '.') ?></strong>
       </div>
 
-      <a href="../php/pedido_pedido.php" class="botao-continuar">Continuar comprando</a>
+      <a href="../php/pedido_pedido.php" class="botao-continuar">Finalizar compra</a>
+      <a href="" class="botao-continuar">Continuar comprando</a>
     </aside>
     <?php endif; ?>
   </main>
