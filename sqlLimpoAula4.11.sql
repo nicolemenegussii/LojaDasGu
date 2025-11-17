@@ -56,7 +56,7 @@
     );
     
     TRUNCATE TABLE administradores;
-    -- Insere os admins 
+    -- insere o adm
     INSERT INTO administradores (usuario, senha) VALUES 
     ('admin', '$2a$10$cTkdTpBTsvGvwzSQ8ngQbu9hkGZ/e4D8iW/BmED4Nh7AoFD.JL1kq');
 
